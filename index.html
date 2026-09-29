@@ -12,6 +12,7 @@
 <div class="group"><div class="label"><label for="density">Form density</label><span class="val" id="densityVal">42</span></div><input id="density" type="range" min="16" max="80" step="2" value="42"></div>
 <div class="group"><div class="label">Color atmosphere <span class="val" id="paletteName">Chromatic</span></div><div class="swatches"><button class="swatch" data-p="0" aria-label="Chromatic" aria-pressed="true" style="background:linear-gradient(135deg,#e9a4c9,#f3b76e,#75d8cf,#7068bd)"></button><button class="swatch" data-p="1" aria-label="Glacier" aria-pressed="false" style="background:linear-gradient(135deg,#e8f4f2,#83c9d4,#687cc8,#333b73)"></button><button class="swatch" data-p="2" aria-label="Ember" aria-pressed="false" style="background:linear-gradient(135deg,#f5d49c,#ef8a70,#c94f6a,#5a2d59)"></button><button class="swatch" data-p="3" aria-label="Forest" aria-pressed="false" style="background:linear-gradient(135deg,#dce5a1,#83c5a2,#438d91,#354b72)"></button></div></div>
 <div class="group"><div class="label"><label for="speed">Playback speed</label><span class="val" id="speedVal">1.0×</span></div><input id="speed" type="range" min="2" max="20" value="8"></div>
+<div class="buttons"><button class="primary" id="play">Pause motion</button><button id="reseed">New composition ↻</button></div>
 <script>
 (()=>{
 const canvas=document.querySelector('#art'),ctx=canvas.getContext('2d'),stage=document.querySelector('#stage');let w,h,dpr,t=0,last=0,running=true,pal=0,forms=[],grain=[];
